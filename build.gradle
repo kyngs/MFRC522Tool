@@ -14,7 +14,7 @@ repositories {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'xyz.kyngs.mfrc522.tool.Main'
+                'Main-Class': 'xyz.kyngs.mfrc522.tool.MFRC522Tool'
         )
     }
 }
@@ -29,4 +29,9 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
